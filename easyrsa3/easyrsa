@@ -6615,9 +6615,7 @@ print_version() {
 		cat << VERSION_TEXT
 EasyRSA Version Information
 Version:     $EASYRSA_version
-Generated:   ~DATE~
 SSL Lib:     ${ssl_version:-undefined}
-Git Commit:  ~GITHEAD~
 Source Repo: https://github.com/OpenVPN/easy-rsa
 VERSION_TEXT
 } # => print_version()

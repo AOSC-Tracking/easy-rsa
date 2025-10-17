@@ -10,6 +10,11 @@
 # and the Licensing/ directory of this project for full licensing
 # details.
 
+# Package-defined variables
+EASYRSA=/etc/easy-rsa
+EASYRSA_PKI=/etc/easy-rsa/pki
+EASYRSA_SSL_CONF=/etc/easy-rsa/openssl-easyrsa.cnf
+
 # Help/usage output to stdout
 usage() {
 	# command help:
@@ -652,10 +657,10 @@ default_overview() {
 Easy-RSA 3 Overview:
 
 To get a list of available options and commands, use:
-  ./easyrsa help
+  easyrsa help
 
 To get detailed usage and help for commands, use:
-  ./easyrsa help <COMMAND>"
+  easyrsa help <COMMAND>"
 
 	# collect/show dir status:
 	text_only=1
